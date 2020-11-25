@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 下4つを入れるとuiが使えるようになる -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.19/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.19/themes/redmond/jquery-ui.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.19/i18n/jquery-ui-i18n.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src = "jquery-ui-1.12.1/jquery-ui.js"></script>
+    <title>Document</title>
+    <style>
+        #circle{
+            width:150px;
+            height:150px;
+            border-radius: 50%;
+            background-color:green;
+        }
+        .square{
+            width:150px;
+            height:150px;
+            background-color:red;
+            margin:10px
+        }
+    </style>
+</head>
+<body>
+    <div id = "circle"></div>
+    <script>
+        //jquery ui https://www.infoscoop.org/blogjp/2012/06/07/jquery-ui-cdn/
+        $("#circle").draggable();
+    </script>
+</body>
+</html>

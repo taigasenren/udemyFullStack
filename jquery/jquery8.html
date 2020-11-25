@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #circle{
+            width:150px;
+            height:150px;
+            border-radius: 50%;
+            background-color:green;
+        }
+        .square{
+            width:150px;
+            height:150px;
+            background-color:red;
+            margin:10px
+        }
+    </style>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        //正規表現(regex)
+        // //の中にマッチさせたい文章を入れる
+        // 変数.match(引数)で変数に引数が含まれているか判別
+        // /文字列/i で検索すると大文字小文字両方対応可能
+        var regex = /js/;
+        var string =  "rejex is ";
+        var result = string.match(regex);
+        alert(result);
+
+    </script>
+</body>
+</html>

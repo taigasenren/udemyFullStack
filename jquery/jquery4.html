@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #circle{
+            width:150px;
+            height:150px;
+            border-radius: 50%;
+            background-color:green;
+        }
+        .square{
+            width:150px;
+            height:150px;
+            background-color:red;
+            margin:10px
+        }
+    </style>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <div id = "circle"></div>
+    <div class = "square"></div>
+    <div class = "square"></div>
+    <script>
+        $("#circle").hover(function(){
+            //.cssでcssを直接触ることが可能
+            //$("#circle").css("background-color","red");
+            //widthの値を表示させることが可能
+            alert($("#circle").css("width"));
+        })
+        $(".square").click(function(){
+            //$(".square").css("display","none");
+            //宣言したスコープ内のタグはthisで表記可能
+            $(this).css("display","none");
+        })
+    </script>
+</body>
+</html>

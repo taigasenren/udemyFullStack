@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #circle{
+            width:150px;
+            height:150px;
+            border-radius: 50%;
+            background-color:green;
+        }
+        .square{
+            width:150px;
+            height:150px;
+            background-color:red;
+            margin:10px
+        }
+    </style>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <div id = "circle"></div>
+    <div class = "square"></div>
+    <div id = "tets"></div>
+    <script>
+        $("#circle").hover(function(){
+            //.animateででアニメーションを作成可能
+            //下の2000は秒数
+            $("#circle").animate({width:"400px"},2000
+            //,function()とすることで連続で処理を実行可能
+            ,function(){
+             $("#circle").animate({width:"200px"},2000);
+            }
+            );
+        })   
+    </script>
+</body>
+</html>
